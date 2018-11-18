@@ -48,4 +48,8 @@ public class Table {
         }
         return false;
     }
+
+    public List<Box> getBoxList() {
+        return boxList;
+    }
 }

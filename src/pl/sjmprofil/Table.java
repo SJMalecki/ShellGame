@@ -22,7 +22,7 @@ public class Table {
 
     public void printBoxList(){
         for(Box box : boxList){
-            System.out.print(box.getBoxMark() + " ");
+            System.out.print("[" +box.getBoxMark() + "] ");
         }
     }
 
@@ -31,19 +31,18 @@ public class Table {
         System.out.println("\nSelect box: ");
         Scanner scanner = new Scanner(System.in);
         String playerChoice = scanner.next();
-
         Box requestedBox = new Box(playerChoice);
         int foundBox = Collections.binarySearch(boxList, requestedBox, null);
         if(foundBox >= 0){
             if(boxList.get(foundBox).isWinBox()){
-                System.out.println("Correct");
+                System.out.println("Correct\n");
                 return true;
             }else{
-                System.out.println("Wrong - box is empty");
+                System.out.println("Wrong - box is empty\n");
                 return false;
             }
         }else{
-            System.out.println("Invalid choice - try again");
+            System.out.println("Invalid choice - try again\n");
             choseBox();
         }
         return false;

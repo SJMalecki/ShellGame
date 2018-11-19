@@ -30,7 +30,7 @@ public class Player {
     }
 
     public void bonus(){
-        if(points > 0 && points%3 == 0 || points > 3){
+        if(points > 0 && points%2 == 0 || points > 2){
             addChance();
         }
     }

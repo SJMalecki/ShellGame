@@ -19,7 +19,7 @@ public class Box implements Comparable<Box> {
 
     public boolean setWinBox(){
         if(!this.winBox){
-            System.out.println("Win box set");
+            System.out.println("Win box set, chose correct box");
             this.winBox = true;
             return true;
         }else{

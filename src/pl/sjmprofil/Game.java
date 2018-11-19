@@ -21,14 +21,20 @@ public class Game {
                 //Collections.shuffle(table.getBoxList());
             }
 
+            if(player.getPoints() == 5){
+                System.out.println("Congratulations u won !");
+                break;
+            }
+
             if(player.getChances() == 0){
                 System.out.println(playerName + " statistic: ");
                 System.out.println("Approaches " + player.getApproaches());
                 System.out.println("Points " + player.getPoints());
                 break;
             }else{
-                System.out.println("Chances " + player.getChances());
+                System.out.println("Chances: " + player.getChances());
             }
+
         }
     }
 

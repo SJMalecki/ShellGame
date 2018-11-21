@@ -29,6 +29,11 @@ public class Player {
         return true;
     }
 
+    public boolean resetChance(){
+        this.chances += 3;
+        return true;
+    }
+
     public void bonus(){
         if(points > 0 && points%2 == 0 || points > 2){
             addChance();

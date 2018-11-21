@@ -42,10 +42,9 @@ public class Table {
                 return false;
             }
         }else{
-            System.out.println("Invalid choice - try again\n");
-            choseBox();
+            System.out.println("Invalid choice\n");
+            return false;
         }
-        return false;
     }
 
     public List<Box> getBoxList() {
